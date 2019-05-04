@@ -1,1 +1,198 @@
-ddad
+{
+  "name": "createcounter",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "DGsra",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "botMember",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "22",
+      "name": "Check Member Permissions"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MANAGE_CHANNELS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "24",
+      "name": "Check Member Permissions"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Creating live member counter...",
+      "storage": "1",
+      "varName2": "loadCreate",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "channelName": "Server Info",
+      "position": "",
+      "storage": "1",
+      "varName": "category1",
+      "name": "Create Category Channel"
+    },
+    {
+      "category": "1",
+      "varName": "category1",
+      "info": "0",
+      "storage": "1",
+      "varName2": "categoryID",
+      "name": "Store Category Info"
+    },
+    {
+      "channelName": "Member Count: ${msg.guild.memberCount}",
+      "categoryID": "${tempVars(\"categoryID\")}",
+      "bitrate": "",
+      "userLimit": "",
+      "storage": "1",
+      "varName": "vc1",
+      "name": "Create Voice Channel"
+    },
+    {
+      "storage": "3",
+      "varName": "vc1",
+      "permission": "CONNECT",
+      "state": "1",
+      "name": "Set Voice Channel Perms"
+    },
+    {
+      "channelName": "Role Count: ${msg.guild.roles.array().length}",
+      "categoryID": "${tempVars(\"categoryID\")}",
+      "bitrate": "",
+      "userLimit": "",
+      "storage": "1",
+      "varName": "vc2",
+      "name": "Create Voice Channel"
+    },
+    {
+      "storage": "3",
+      "varName": "vc2",
+      "permission": "CONNECT",
+      "state": "1",
+      "name": "Set Voice Channel Perms"
+    },
+    {
+      "channelName": "Channel Count: ${msg.guild.channels.array().length}",
+      "categoryID": "${tempVars(\"categoryID\")}",
+      "bitrate": "",
+      "userLimit": "",
+      "storage": "1",
+      "varName": "vc3",
+      "name": "Create Voice Channel"
+    },
+    {
+      "storage": "3",
+      "varName": "vc3",
+      "permission": "CONNECT",
+      "state": "1",
+      "name": "Set Voice Channel Perms"
+    },
+    {
+      "storage": "3",
+      "varName": "vc3",
+      "channelType": "1",
+      "toChange": "0",
+      "newState": "Channel Count: ${tempVars(\"channelAmount\")}",
+      "name": "Edit Channel"
+    },
+    {
+      "channel": "3",
+      "varName": "vc1",
+      "info": "1",
+      "storage": "1",
+      "varName2": "vc1ID",
+      "name": "Store Voice Channel Info"
+    },
+    {
+      "channel": "3",
+      "varName": "vc2",
+      "info": "1",
+      "storage": "1",
+      "varName2": "vc2ID",
+      "name": "Store Voice Channel Info"
+    },
+    {
+      "channel": "3",
+      "varName": "vc3",
+      "info": "1",
+      "storage": "1",
+      "varName2": "vc3ID",
+      "name": "Store Voice Channel Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "voicechannelID1",
+      "changeType": "0",
+      "value": "tempVars(\"vc1ID\")",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "voicechannelID2",
+      "changeType": "0",
+      "value": "tempVars(\"vc2ID\")",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "voicechannelID3",
+      "changeType": "0",
+      "value": "tempVars(\"vc3ID\")",
+      "name": "Control Server Data"
+    },
+    {
+      "storage": "1",
+      "varName": "loadCreate",
+      "message": "Creation Completed!",
+      "storage2": "1",
+      "varName2": "",
+      "name": "Edit Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You must have the Adminstrator permission to use this command!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "The bot must have the Manage Channel permission to use this command!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ]
+}
