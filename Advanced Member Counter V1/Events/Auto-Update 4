@@ -1,0 +1,42 @@
+{
+  "name": "Auto-Update 4",
+  "temp": "",
+  "event-type": "11",
+  "_id": "PctEw",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "voicechannelID2",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "voicechannelID",
+      "name": "Store Server Data"
+    },
+    {
+      "info": "0",
+      "find": "${tempVars(\"voicechannelID\")}",
+      "storage": "1",
+      "varName": "voiceChannel",
+      "name": "Find Voice Channel"
+    },
+    {
+      "storage": "1",
+      "varName": "voiceChannel",
+      "comparison": "6",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable Type"
+    },
+    {
+      "storage": "3",
+      "varName": "voiceChannel",
+      "channelType": "1",
+      "toChange": "0",
+      "newState": "Role Count: ${msg.guild.roles.array().length}",
+      "name": "Edit Channel"
+    }
+  ]
+}
