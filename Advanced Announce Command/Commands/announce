@@ -1,0 +1,654 @@
+{
+  "name": "announce",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "LvMQc",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "69",
+      "name": "Check Member Permissions"
+    },
+    {
+      "title": "Announcement Prompt",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "",
+      "message": "What will your announcement title be?\n\n**Say cancel to stop this prompt.**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "",
+      "message": "Auto-Timeout in 1 minute",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "1",
+      "varName3": "announcementPrompt",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "66",
+      "storage2": "1",
+      "varName2": "announcementTitle",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementTitle",
+      "comparison": "1",
+      "value": "\"cancel\"",
+      "iftrue": "2",
+      "iftrueVal": "66",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementTitle",
+      "name": "Delete Message"
+    },
+    {
+      "title": "Announcement Prompt",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "annPrompt2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt2",
+      "message": "What will your announcement description be?\n\n**Say cancel to stop this prompt.**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt2",
+      "message": "Auto-Timeout in 1 minute",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementPrompt",
+      "message": "",
+      "storage2": "1",
+      "varName2": "annPrompt2",
+      "name": "Edit Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "66",
+      "storage2": "1",
+      "varName2": "announcementDescription",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementDescription",
+      "comparison": "1",
+      "value": "\"cancel\"",
+      "iftrue": "2",
+      "iftrueVal": "66",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementDescription",
+      "name": "Delete Message"
+    },
+    {
+      "title": "Announcement Prompt",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "annPrompt3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt3",
+      "message": "What channel would you like to send this announcement to? (Add the channel **NAME**)\n\n**Say cancel to stop this prompt.**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt3",
+      "message": "Auto-Timeout in 1 minute",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementPrompt",
+      "message": "",
+      "storage2": "1",
+      "varName2": "annPrompt3",
+      "name": "Edit Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "66",
+      "storage2": "1",
+      "varName2": "announcementChannel",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementChannel",
+      "comparison": "1",
+      "value": "\"cancel\"",
+      "iftrue": "2",
+      "iftrueVal": "66",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementChannel",
+      "name": "Delete Message"
+    },
+    {
+      "title": "Announcement Prompt",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "annPrompt4",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt4",
+      "message": "Would you like to include a ping? (Yes or No)\n\n**Say cancel to stop this prompt.**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt4",
+      "message": "Auto-Timeout in 1 minute",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementPrompt",
+      "message": "",
+      "storage2": "1",
+      "varName2": "annPrompt4",
+      "name": "Edit Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "66",
+      "storage2": "1",
+      "varName2": "Yes/No",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "Yes/No",
+      "comparison": "1",
+      "value": "\"cancel\"",
+      "iftrue": "2",
+      "iftrueVal": "66",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "Yes/No",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Yes/No",
+      "conversion": "4",
+      "storage2": "1",
+      "varName2": "Yes/No2",
+      "name": "Convert Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "Yes/No2",
+      "comparison": "1",
+      "value": "\"yes\"",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "Yes/No2",
+      "comparison": "1",
+      "value": "\"no\"",
+      "iftrue": "2",
+      "iftrueVal": "51",
+      "iffalse": "2",
+      "iffalseVal": "63",
+      "name": "Check Variable"
+    },
+    {
+      "title": "Announcement Prompt",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "annPrompt5",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt5",
+      "message": "What type of ping would you like to include? (Everyone or Here)\n\n**Say cancel to stop this prompt.**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt5",
+      "message": "Auto-Timeout in 1 minute",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementPrompt",
+      "message": "",
+      "storage2": "1",
+      "varName2": "annPrompt5",
+      "name": "Edit Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "66",
+      "storage2": "1",
+      "varName2": "Everyone/Here",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "Everyone/Here",
+      "comparison": "1",
+      "value": "\"cancel\"",
+      "iftrue": "2",
+      "iftrueVal": "66",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "Everyone/Here",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Everyone/Here",
+      "conversion": "4",
+      "storage2": "1",
+      "varName2": "Everyone/Here2",
+      "name": "Convert Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "Everyone/Here2",
+      "comparison": "1",
+      "value": "\"everyone\"",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "Everyone/Here2",
+      "comparison": "1",
+      "value": "\"here\"",
+      "iftrue": "3",
+      "iftrueVal": "4",
+      "iffalse": "2",
+      "iffalseVal": "63",
+      "name": "Check Variable"
+    },
+    {
+      "info": "1",
+      "find": "${tempVars(\"announcementChannel\")}",
+      "storage": "1",
+      "varName": "channel",
+      "name": "Find Channel"
+    },
+    {
+      "storage": "1",
+      "varName": "channel",
+      "comparison": "5",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "60",
+      "name": "Check Variable Type"
+    },
+    {
+      "channel": "5",
+      "varName": "channel",
+      "message": "@everyone",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "call": "53",
+      "name": "Jump to Action"
+    },
+    {
+      "info": "1",
+      "find": "${tempVars(\"announcementChannel\")}",
+      "storage": "1",
+      "varName": "channel",
+      "name": "Find Channel"
+    },
+    {
+      "storage": "1",
+      "varName": "channel",
+      "comparison": "5",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "60",
+      "name": "Check Variable Type"
+    },
+    {
+      "channel": "5",
+      "varName": "channel",
+      "message": "@here",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "call": "53",
+      "name": "Jump to Action"
+    },
+    {
+      "info": "1",
+      "find": "${tempVars(\"announcementChannel\")}",
+      "storage": "1",
+      "varName": "channel",
+      "name": "Find Channel"
+    },
+    {
+      "storage": "1",
+      "varName": "channel",
+      "comparison": "5",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "60",
+      "name": "Check Variable Type"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Sending...",
+      "storage": "1",
+      "varName2": "loadingSend",
+      "iffalse": "0",
+      "iffalseVal": "loadingSend",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementPrompt",
+      "name": "Delete Message"
+    },
+    {
+      "title": "${tempVars(\"announcementTitle\")}",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "",
+      "message": "${tempVars(\"announcementDescription\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "",
+      "channel": "5",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "2",
+      "iffalseVal": "60",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "loadingSend",
+      "message": "Announcement sent!",
+      "storage2": "1",
+      "varName2": "",
+      "name": "Edit Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementPrompt",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Unable to send the announcement to that channel, the bot may not have the permissions to chat there or that channel does not exists.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementPrompt",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Invalid Response.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementPrompt",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Announcement Prompt Cancelled/or Timed Out.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You must have the Adminstrator permission to use this command!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ]
+}
