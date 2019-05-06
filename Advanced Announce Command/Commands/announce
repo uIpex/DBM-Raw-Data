@@ -2,7 +2,7 @@
   "name": "announce",
   "permissions": "NONE",
   "restriction": "1",
-  "_id": "LvMQc",
+  "_id": "Utmvr",
   "actions": [
     {
       "member": "1",
@@ -11,7 +11,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "69",
+      "iffalseVal": "88",
       "name": "Check Member Permissions"
     },
     {
@@ -69,7 +69,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "66",
+      "iffalseVal": "85",
       "storage2": "1",
       "varName2": "announcementTitle",
       "name": "Await Response Call Action"
@@ -80,7 +80,7 @@
       "comparison": "1",
       "value": "\"cancel\"",
       "iftrue": "2",
-      "iftrueVal": "66",
+      "iftrueVal": "85",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check Variable"
@@ -142,7 +142,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "66",
+      "iffalseVal": "85",
       "storage2": "1",
       "varName2": "announcementDescription",
       "name": "Await Response Call Action"
@@ -153,7 +153,7 @@
       "comparison": "1",
       "value": "\"cancel\"",
       "iftrue": "2",
-      "iftrueVal": "66",
+      "iftrueVal": "85",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check Variable"
@@ -162,6 +162,200 @@
       "storage": "1",
       "varName": "announcementDescription",
       "name": "Delete Message"
+    },
+    {
+      "title": "Announcement Prompt",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "annPrompt4",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt4",
+      "message": "Would you like a custom color on your embed? If not it will be on it's default. (Yes or No)\n\n**Say cancel to stop this prompt.**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt4",
+      "message": "Auto-Timeout in 1 minute",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementPrompt",
+      "message": "",
+      "storage2": "1",
+      "varName2": "annPrompt4",
+      "name": "Edit Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "85",
+      "storage2": "1",
+      "varName2": "Yes/No-2",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "Yes/No-2",
+      "comparison": "1",
+      "value": "\"cancel\"",
+      "iftrue": "2",
+      "iftrueVal": "85",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "Yes/No-2",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Yes/No-2",
+      "conversion": "4",
+      "storage2": "1",
+      "varName2": "Yes/No2-2",
+      "name": "Convert Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "Yes/No2-2",
+      "comparison": "1",
+      "value": "\"yes\"",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "Yes/No2-2",
+      "comparison": "1",
+      "value": "\"no\"",
+      "iftrue": "2",
+      "iftrueVal": "35",
+      "iffalse": "2",
+      "iffalseVal": "82",
+      "name": "Check Variable"
+    },
+    {
+      "title": "Announcement Prompt",
+      "author": "",
+      "color": "",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "annPrompt2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt2",
+      "message": "What will your embed color be? (Make sure that your color is a hex code)\n\n**Say cancel to stop this prompt.**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "annPrompt2",
+      "message": "Auto-Timeout in 1 minute",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementPrompt",
+      "message": "",
+      "storage2": "1",
+      "varName2": "annPrompt2",
+      "name": "Edit Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "filter": "content.length > 0",
+      "max": "1",
+      "time": "60000",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "85",
+      "storage2": "1",
+      "varName2": "announcementColor",
+      "name": "Await Response Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementColor",
+      "comparison": "1",
+      "value": "\"cancel\"",
+      "iftrue": "2",
+      "iftrueVal": "85",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "announcementColor",
+      "name": "Delete Message"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "parseInt(tempVars(\"announcementColor\"))",
+      "storage": "1",
+      "varName": "checkValue",
+      "name": "Run Script"
+    },
+    {
+      "storage": "1",
+      "varName": "checkValue",
+      "comparison": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "82",
+      "name": "Check Variable Type"
     },
     {
       "title": "Announcement Prompt",
@@ -215,7 +409,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "66",
+      "iffalseVal": "85",
       "storage2": "1",
       "varName2": "announcementChannel",
       "name": "Await Response Call Action"
@@ -226,7 +420,7 @@
       "comparison": "1",
       "value": "\"cancel\"",
       "iftrue": "2",
-      "iftrueVal": "66",
+      "iftrueVal": "85",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check Variable"
@@ -288,7 +482,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "66",
+      "iffalseVal": "85",
       "storage2": "1",
       "varName2": "Yes/No",
       "name": "Await Response Call Action"
@@ -299,7 +493,7 @@
       "comparison": "1",
       "value": "\"cancel\"",
       "iftrue": "2",
-      "iftrueVal": "66",
+      "iftrueVal": "85",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check Variable"
@@ -334,9 +528,9 @@
       "comparison": "1",
       "value": "\"no\"",
       "iftrue": "2",
-      "iftrueVal": "51",
+      "iftrueVal": "70",
       "iffalse": "2",
-      "iffalseVal": "63",
+      "iffalseVal": "82",
       "name": "Check Variable"
     },
     {
@@ -391,7 +585,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "66",
+      "iffalseVal": "85",
       "storage2": "1",
       "varName2": "Everyone/Here",
       "name": "Await Response Call Action"
@@ -402,7 +596,7 @@
       "comparison": "1",
       "value": "\"cancel\"",
       "iftrue": "2",
-      "iftrueVal": "66",
+      "iftrueVal": "85",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check Variable"
@@ -439,7 +633,7 @@
       "iftrue": "3",
       "iftrueVal": "4",
       "iffalse": "2",
-      "iffalseVal": "63",
+      "iffalseVal": "82",
       "name": "Check Variable"
     },
     {
@@ -456,7 +650,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "60",
+      "iffalseVal": "79",
       "name": "Check Variable Type"
     },
     {
@@ -470,7 +664,7 @@
       "name": "Send Message"
     },
     {
-      "call": "53",
+      "call": "72",
       "name": "Jump to Action"
     },
     {
@@ -487,7 +681,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "60",
+      "iffalseVal": "79",
       "name": "Check Variable Type"
     },
     {
@@ -501,7 +695,7 @@
       "name": "Send Message"
     },
     {
-      "call": "53",
+      "call": "72",
       "name": "Jump to Action"
     },
     {
@@ -518,7 +712,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "60",
+      "iffalseVal": "79",
       "name": "Check Variable Type"
     },
     {
@@ -539,7 +733,7 @@
     {
       "title": "${tempVars(\"announcementTitle\")}",
       "author": "",
-      "color": "",
+      "color": "${tempVars(\"announcementColor\")}",
       "url": "",
       "authorIcon": "",
       "authorUrl": "",
@@ -572,7 +766,7 @@
       "storage3": "0",
       "varName3": "",
       "iffalse": "2",
-      "iffalseVal": "60",
+      "iffalseVal": "79",
       "name": "Send Embed Message"
     },
     {
@@ -612,7 +806,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "Invalid Response.",
+      "message": "Invalid Response/Value.",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
