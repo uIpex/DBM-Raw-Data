@@ -1,6 +1,6 @@
 {
-  "name": "Auto-Update (Every1Min)",
-  "temp": "60",
+  "name": "Auto-Update (Every5Min)",
+  "temp": "300",
   "event-type": "3",
   "_id": "dVTpF",
   "actions": [
