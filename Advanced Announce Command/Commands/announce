@@ -63,7 +63,7 @@
     {
       "storage": "0",
       "varName": "",
-      "filter": "content.length > 0",
+      "filter": "content.length > 0 && author.id === '${msg.author.id}'",
       "max": "1",
       "time": "60000",
       "iftrue": "0",
@@ -136,7 +136,7 @@
     {
       "storage": "0",
       "varName": "",
-      "filter": "content.length > 0",
+      "filter": "content.length > 0 && author.id === '${msg.author.id}'",
       "max": "1",
       "time": "60000",
       "iftrue": "0",
@@ -209,7 +209,7 @@
     {
       "storage": "0",
       "varName": "",
-      "filter": "content.length > 0",
+      "filter": "content.length > 0 && author.id === '${msg.author.id}'",
       "max": "1",
       "time": "60000",
       "iftrue": "0",
@@ -312,7 +312,7 @@
     {
       "storage": "0",
       "varName": "",
-      "filter": "content.length > 0",
+      "filter": "content.length > 0 && author.id === '${msg.author.id}'",
       "max": "1",
       "time": "60000",
       "iftrue": "0",
@@ -403,7 +403,7 @@
     {
       "storage": "0",
       "varName": "",
-      "filter": "content.length > 0",
+      "filter": "content.length > 0 && author.id === '${msg.author.id}'",
       "max": "1",
       "time": "60000",
       "iftrue": "0",
@@ -476,7 +476,7 @@
     {
       "storage": "0",
       "varName": "",
-      "filter": "content.length > 0",
+      "filter": "content.length > 0 && author.id === '${msg.author.id}'",
       "max": "1",
       "time": "60000",
       "iftrue": "0",
@@ -579,7 +579,7 @@
     {
       "storage": "0",
       "varName": "",
-      "filter": "content.length > 0",
+      "filter": "content.length > 0 && author.id === '${msg.author.id}'",
       "max": "1",
       "time": "60000",
       "iftrue": "0",
