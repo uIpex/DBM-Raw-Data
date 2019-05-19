@@ -40,7 +40,7 @@
     {
       "member": "2",
       "varName": "botMember",
-      "permission": "KICK_MEMBERS",
+      "permission": "BAN_MEMBERS",
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
