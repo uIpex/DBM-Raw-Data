@@ -1,0 +1,608 @@
+{
+  "name": "mute",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "eRgTF",
+  "actions": [
+    {
+      "comment": "Created by: Ipex#8172",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "MANAGE_ROLES",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "2",
+      "iffalseVal": "59",
+      "name": "Check Member Permissions"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "role": "4",
+      "varName2": "moderatorRole",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "59",
+      "name": "Check If Member has Role"
+    },
+    {
+      "info": "1",
+      "find": "Muted",
+      "storage": "1",
+      "varName": "mutedRole",
+      "name": "Find Role"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "botMember",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "MANAGE_ROLES",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "65",
+      "name": "Check Member Permissions"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "checkUser",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "0",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "time",
+      "name": "Store Command Params"
+    },
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "31",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "2",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "61",
+      "name": "Check Parameters"
+    },
+    {
+      "info": "0",
+      "find": "${tempVars(\"checkUser\")}",
+      "storage": "1",
+      "varName": "member",
+      "find2": "0",
+      "name": "Find Member"
+    },
+    {
+      "storage": "1",
+      "varName": "member",
+      "comparison": "3",
+      "iftrue": "0",
+      "iftrueVal": "2",
+      "iffalse": "2",
+      "iffalseVal": "63",
+      "name": "Check Variable Type"
+    },
+    {
+      "storage": "1",
+      "varName": "time",
+      "comparison": "11",
+      "value": "\"m\"",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "time",
+      "comparison": "11",
+      "value": "\"h\"",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "2",
+      "iffalseVal": "61",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "time",
+      "comparison": "4",
+      "value": "0m",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "2",
+      "iffalseVal": "74",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "time",
+      "comparison": "4",
+      "value": "0h",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "74",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "mutedRole",
+      "comparison": "7",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "69",
+      "name": "Check Variable Type"
+    },
+    {
+      "role": "3",
+      "varName": "mutedRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "muteRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "info": "7",
+      "storage": "1",
+      "varName2": "memberHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "memberHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "memberRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "info": "7",
+      "storage": "1",
+      "varName2": "botHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "botHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "botRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "storage": "1",
+      "varName": "muteRolePosition",
+      "comparison": "3",
+      "value": "tempVars(\"botRolePosition\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "72",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "memberRolePosition",
+      "comparison": "3",
+      "value": "tempVars(\"botRolePosition\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "72",
+      "name": "Check Variable"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "role": "3",
+      "varName2": "mutedRole",
+      "iftrue": "2",
+      "iftrueVal": "67",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If Member has Role"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "info": "22",
+      "storage": "1",
+      "varName2": "memberTag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName2": "member",
+      "role": "3",
+      "varName": "mutedRole",
+      "name": "Add Member Role"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "``${tempVars(\"memberTag\")}`` has been successfully muted for ${tempVars(\"time\")}.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "call": "48",
+      "name": "Jump to Action"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "time",
+      "comparison": "11",
+      "value": "\"m\"",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "time",
+      "comparison": "11",
+      "value": "\"h\"",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "61",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "time",
+      "comparison": "4",
+      "value": "0m",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "2",
+      "iffalseVal": "74",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "time",
+      "comparison": "4",
+      "value": "0h",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "74",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "mutedRole",
+      "comparison": "7",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "69",
+      "name": "Check Variable Type"
+    },
+    {
+      "role": "3",
+      "varName": "mutedRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "muteRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "member": "0",
+      "varName": "member",
+      "info": "7",
+      "storage": "1",
+      "varName2": "memberHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "memberHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "memberRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "info": "7",
+      "storage": "1",
+      "varName2": "botHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "botHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "botRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "storage": "1",
+      "varName": "muteRolePosition",
+      "comparison": "3",
+      "value": "tempVars(\"botRolePosition\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "72",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "memberRolePosition",
+      "comparison": "3",
+      "value": "tempVars(\"botRolePosition\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "72",
+      "name": "Check Variable"
+    },
+    {
+      "member": "0",
+      "varName": "member",
+      "role": "3",
+      "varName2": "mutedRole",
+      "iftrue": "2",
+      "iftrueVal": "67",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If Member has Role"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "22",
+      "storage": "1",
+      "varName2": "memberTag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "0",
+      "varName2": "${mentionedUser}",
+      "role": "3",
+      "varName": "mutedRole",
+      "name": "Add Member Role"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "``${tempVars(\"memberTag\")}`` has been successfully muted for ${tempVars(\"time\")}.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "changeType": "0",
+      "value": "1",
+      "storage": "1",
+      "varName": "checkif",
+      "name": "Control Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "time",
+      "comparison": "11",
+      "value": "\"m\"",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "time": "${tempVars(\"time\")}",
+      "measurement": "2",
+      "name": "Wait"
+    },
+    {
+      "count": "2",
+      "name": "Skip Actions"
+    },
+    {
+      "storage": "1",
+      "varName": "time",
+      "comparison": "11",
+      "value": "\"h\"",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "61",
+      "name": "Check Variable"
+    },
+    {
+      "time": "${tempVars(\"time\")}",
+      "measurement": "3",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "checkif",
+      "comparison": "2",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "member": "2",
+      "varName2": "member",
+      "role": "3",
+      "varName": "mutedRole",
+      "name": "Remove Member Role"
+    },
+    {
+      "count": "1",
+      "name": "Skip Actions"
+    },
+    {
+      "member": "0",
+      "varName2": "",
+      "role": "3",
+      "varName": "mutedRole",
+      "name": "Remove Member Role"
+    },
+    {
+      "changeType": "0",
+      "value": "0",
+      "storage": "1",
+      "varName": "checkif",
+      "name": "Control Variable"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You must have the Manage Roles permission or the Moderator role to use this command!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Invalid Arguments.\nUsage: ``[p]mute <User> <Time[m/h]>``",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "User does not exist.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Bot does not have the permissions to Manage Roles.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "User is already muted.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "roleName": "Muted",
+      "hoist": "false",
+      "mentionable": "false",
+      "color": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "name": "Create Role"
+    },
+    {
+      "call": "4",
+      "name": "Jump to Action"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You can't mute a user with a higher role than the bot.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Value must be greater than 0.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ]
+}
