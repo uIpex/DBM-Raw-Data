@@ -1,0 +1,323 @@
+{
+  "name": "ban",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "uKNfP",
+  "actions": [
+    {
+      "comment": "Created by: Ipex#8172",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "KICK_MEMBERS",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "2",
+      "iffalseVal": "32",
+      "name": "Check Member Permissions"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "role": "4",
+      "varName2": "moderatorRole",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "32",
+      "name": "Check If Member has Role"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "botMember",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "KICK_MEMBERS",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "38",
+      "name": "Check Member Permissions"
+    },
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "22",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "0",
+      "comparison": "2",
+      "value": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "34",
+      "name": "Check Parameters"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "checkUser",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "3",
+      "find": "${tempVars(\"checkUser\")}",
+      "storage": "1",
+      "varName": "member",
+      "find2": "0",
+      "name": "Find Member"
+    },
+    {
+      "storage": "1",
+      "varName": "member",
+      "comparison": "3",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable Type"
+    },
+    {
+      "info": "0",
+      "find": "${tempVars(\"checkUser\")}",
+      "storage": "1",
+      "varName": "member",
+      "find2": "0",
+      "name": "Find Member"
+    },
+    {
+      "storage": "1",
+      "varName": "member",
+      "comparison": "3",
+      "iftrue": "0",
+      "iftrueVal": "2",
+      "iffalse": "2",
+      "iffalseVal": "36",
+      "name": "Check Variable Type"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "info": "7",
+      "storage": "1",
+      "varName2": "memberHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "memberHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "memberRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "info": "7",
+      "storage": "1",
+      "varName2": "botHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "botHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "botRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "storage": "1",
+      "varName": "memberRolePosition",
+      "comparison": "3",
+      "value": "tempVars(\"botRolePosition\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "40",
+      "name": "Check Variable"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "info": "22",
+      "storage": "1",
+      "varName2": "memberTag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "reason": "",
+      "name": "Ban Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "``${tempVars(\"memberTag\")}`` has been successfully banned.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "0",
+      "varName": "member",
+      "info": "7",
+      "storage": "1",
+      "varName2": "memberHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "memberHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "memberRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "info": "7",
+      "storage": "1",
+      "varName2": "botHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "botHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "botRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "storage": "1",
+      "varName": "memberRolePosition",
+      "comparison": "3",
+      "value": "tempVars(\"botRolePosition\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "40",
+      "name": "Check Variable"
+    },
+    {
+      "info": "2",
+      "infoIndex": "1",
+      "storage": "2",
+      "varName": "member",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "22",
+      "storage": "1",
+      "varName2": "memberTag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Ban Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "``${tempVars(\"memberTag\")}`` has been successfully banned.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You must have the Ban Members permission or the Moderator role to use this command!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You must specify a user to use this command.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "User does not exist.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Bot does not have the permissions to Ban Members.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You can't kick a user with a higher role than the bot.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ]
+}
