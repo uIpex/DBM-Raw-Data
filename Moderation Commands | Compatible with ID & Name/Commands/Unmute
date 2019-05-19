@@ -15,8 +15,8 @@
       "permission": "MANAGE_ROLES",
       "iftrue": "3",
       "iftrueVal": "1",
-      "iffalse": "2",
-      "iffalseVal": "27",
+      "iffalse": "0",
+      "iffalseVal": "40",
       "name": "Check Member Permissions"
     },
     {
@@ -27,7 +27,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "27",
+      "iffalseVal": "40",
       "name": "Check If Member has Role"
     },
     {
@@ -51,8 +51,71 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "33",
+      "iffalseVal": "46",
       "name": "Check Member Permissions"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "checkUser",
+      "name": "Store Command Params"
+    },
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "27",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "42",
+      "name": "Check Parameters"
+    },
+    {
+      "info": "3",
+      "find": "${tempVars(\"checkUser\")}",
+      "storage": "1",
+      "varName": "member",
+      "find2": "0",
+      "name": "Find Member"
+    },
+    {
+      "storage": "1",
+      "varName": "member",
+      "comparison": "3",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "31",
+      "name": "Check Variable Type"
+    },
+    {
+      "info": "0",
+      "find": "${tempVars(\"checkUser\")}",
+      "storage": "1",
+      "varName": "member",
+      "find2": "0",
+      "name": "Find Member"
+    },
+    {
+      "storage": "1",
+      "varName": "member",
+      "comparison": "3",
+      "iftrue": "0",
+      "iftrueVal": "2",
+      "iffalse": "2",
+      "iffalseVal": "44",
+      "name": "Check Variable Type"
     },
     {
       "role": "3",
@@ -60,6 +123,30 @@
       "info": "4",
       "storage": "1",
       "varName2": "muteRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "info": "7",
+      "storage": "1",
+      "varName2": "memberHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "info": "17",
+      "storage": "1",
+      "varName2": "memberRoleList",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "memberHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "memberRolePosition",
       "name": "Store Role Info"
     },
     {
@@ -79,59 +166,25 @@
       "name": "Store Role Info"
     },
     {
-      "info": "0",
-      "infoIndex": "1",
-      "storage": "1",
-      "varName": "checkUser",
-      "name": "Store Command Params"
-    },
-    {
-      "condition": "1",
-      "comparison": "0",
-      "value": "1",
-      "iftrue": "2",
-      "iftrueVal": "21",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Parameters"
-    },
-    {
-      "condition": "0",
-      "comparison": "0",
-      "value": "1",
-      "iftrue": "0",
-      "iftrueVal": "",
-      "iffalse": "2",
-      "iffalseVal": "29",
-      "name": "Check Parameters"
-    },
-    {
-      "info": "0",
-      "find": "${tempVars(\"checkUser\")}",
-      "storage": "1",
-      "varName": "member",
-      "find2": "0",
-      "name": "Find Member"
-    },
-    {
-      "storage": "1",
-      "varName": "member",
-      "comparison": "3",
-      "iftrue": "0",
-      "iftrueVal": "2",
-      "iffalse": "2",
-      "iffalseVal": "31",
-      "name": "Check Variable Type"
-    },
-    {
       "storage": "1",
       "varName": "muteRolePosition",
       "comparison": "3",
       "value": "tempVars(\"botRolePosition\")",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "37",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "memberRoleList",
+      "comparison": "0",
+      "value": "tempVars(\"botRolePosition\")",
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "37",
+      "iffalseVal": "50",
       "name": "Check Variable"
     },
     {
@@ -142,7 +195,7 @@
       "iftrue": "0",
       "iftrueVal": "58",
       "iffalse": "2",
-      "iffalseVal": "35",
+      "iffalseVal": "48",
       "name": "Check If Member has Role"
     },
     {
@@ -174,14 +227,73 @@
       "name": "End Action Sequence"
     },
     {
+      "role": "3",
+      "varName": "mutedRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "muteRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "member": "0",
+      "varName": "member",
+      "info": "7",
+      "storage": "1",
+      "varName2": "memberHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "0",
+      "varName": "member",
+      "info": "17",
+      "storage": "1",
+      "varName2": "memberRoleList",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "memberHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "memberRolePosition",
+      "name": "Store Role Info"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "info": "7",
+      "storage": "1",
+      "varName2": "botHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "role": "3",
+      "varName": "botHighestRole",
+      "info": "4",
+      "storage": "1",
+      "varName2": "botRolePosition",
+      "name": "Store Role Info"
+    },
+    {
       "storage": "1",
       "varName": "muteRolePosition",
       "comparison": "3",
       "value": "tempVars(\"botRolePosition\")",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "37",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "memberRoleList",
+      "comparison": "0",
+      "value": "tempVars(\"botRolePosition\")",
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "37",
+      "iffalseVal": "50",
       "name": "Check Variable"
     },
     {
@@ -192,7 +304,7 @@
       "iftrue": "0",
       "iftrueVal": "35",
       "iffalse": "2",
-      "iffalseVal": "35",
+      "iffalseVal": "48",
       "name": "Check If Member has Role"
     },
     {
@@ -239,7 +351,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "Invalid Arguments.\nUsage: ``[p]unmute <User>``",
+      "message": "You must specify a user to use this command.",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
