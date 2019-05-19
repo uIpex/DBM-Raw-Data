@@ -15,7 +15,7 @@
       "permission": "BAN_MEMBERS",
       "iftrue": "3",
       "iftrueVal": "1",
-      "iffalse": "2",
+      "iffalse": "0",
       "iffalseVal": "36",
       "name": "Check Member Permissions"
     },
