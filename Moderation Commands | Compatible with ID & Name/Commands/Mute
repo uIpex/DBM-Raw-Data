@@ -15,7 +15,7 @@
       "permission": "MANAGE_ROLES",
       "iftrue": "3",
       "iftrueVal": "1",
-      "iffalse": "2",
+      "iffalse": "0",
       "iffalseVal": "63",
       "name": "Check Member Permissions"
     },
