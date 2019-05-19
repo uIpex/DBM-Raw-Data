@@ -1,0 +1,217 @@
+{
+  "name": "setmod",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "LPNgQ",
+  "actions": [
+    {
+      "comment": "Created by: Ipex#8172",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "24",
+      "name": "Check Member Permissions"
+    },
+    {
+      "condition": "3",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "16",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "0",
+      "comparison": "2",
+      "value": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "26",
+      "name": "Check Parameters"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "disable",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "1",
+      "varName": "enable/disable",
+      "comparison": "1",
+      "value": "\"disable\"",
+      "iftrue": "2",
+      "iftrueVal": "21",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "moderatorRole2",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "1",
+      "find": "${tempVars(\"moderatorRole2\")}",
+      "storage": "2",
+      "varName": "moderatorRole",
+      "name": "Find Role"
+    },
+    {
+      "storage": "2",
+      "varName": "moderatorRole",
+      "comparison": "7",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable Type"
+    },
+    {
+      "info": "0",
+      "find": "${tempVars(\"moderatorRole2\")}",
+      "storage": "2",
+      "varName": "moderatorRole",
+      "name": "Find Role"
+    },
+    {
+      "storage": "2",
+      "varName": "moderatorRole",
+      "comparison": "7",
+      "iftrue": "0",
+      "iftrueVal": "2",
+      "iffalse": "2",
+      "iffalseVal": "28",
+      "name": "Check Variable Type"
+    },
+    {
+      "role": "4",
+      "varName": "moderatorRole",
+      "info": "2",
+      "storage": "1",
+      "varName2": "roleName",
+      "name": "Store Role Info"
+    },
+    {
+      "storage": "2",
+      "varName": "moderatorRole",
+      "name": "Save Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "``${tempVars(\"roleName\")}`` is now a moderator role.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "3",
+      "infoIndex": "1",
+      "storage": "2",
+      "varName": "moderatorRole",
+      "name": "Store Command Params"
+    },
+    {
+      "role": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "roleName",
+      "name": "Store Role Info"
+    },
+    {
+      "storage": "2",
+      "varName": "moderatorRole",
+      "name": "Save Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "``${tempVars(\"roleName\")}`` is now a moderator role.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "changeType": "0",
+      "value": "0",
+      "storage": "2",
+      "varName": "moderatorRole",
+      "name": "Control Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Moderator role has been disabled.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You must have the Adminstrator permission to use this command!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You must include a role mention/id/name.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Role does not exist.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ]
+}
