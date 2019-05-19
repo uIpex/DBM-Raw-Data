@@ -16,7 +16,7 @@
       "iftrue": "3",
       "iftrueVal": "1",
       "iffalse": "2",
-      "iffalseVal": "59",
+      "iffalseVal": "63",
       "name": "Check Member Permissions"
     },
     {
@@ -27,7 +27,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "59",
+      "iffalseVal": "63",
       "name": "Check If Member has Role"
     },
     {
@@ -51,7 +51,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "65",
+      "iffalseVal": "69",
       "name": "Check Member Permissions"
     },
     {
@@ -73,7 +73,7 @@
       "comparison": "0",
       "value": "1",
       "iftrue": "2",
-      "iftrueVal": "31",
+      "iftrueVal": "33",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check Parameters"
@@ -85,7 +85,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "61",
+      "iffalseVal": "65",
       "name": "Check Parameters"
     },
     {
@@ -103,7 +103,7 @@
       "iftrue": "0",
       "iftrueVal": "2",
       "iffalse": "2",
-      "iffalseVal": "63",
+      "iffalseVal": "67",
       "name": "Check Variable Type"
     },
     {
@@ -125,7 +125,7 @@
       "iftrue": "3",
       "iftrueVal": "1",
       "iffalse": "2",
-      "iffalseVal": "61",
+      "iffalseVal": "65",
       "name": "Check Variable"
     },
     {
@@ -136,7 +136,7 @@
       "iftrue": "3",
       "iftrueVal": "1",
       "iffalse": "2",
-      "iffalseVal": "74",
+      "iffalseVal": "78",
       "name": "Check Variable"
     },
     {
@@ -147,7 +147,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "74",
+      "iffalseVal": "78",
       "name": "Check Variable"
     },
     {
@@ -157,7 +157,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "69",
+      "iffalseVal": "73",
       "name": "Check Variable Type"
     },
     {
@@ -174,6 +174,14 @@
       "info": "7",
       "storage": "1",
       "varName2": "memberHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "info": "17",
+      "storage": "1",
+      "varName2": "memberRoleList",
       "name": "Store Member Info"
     },
     {
@@ -208,7 +216,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "72",
+      "iffalseVal": "76",
       "name": "Check Variable"
     },
     {
@@ -216,10 +224,21 @@
       "varName": "memberRolePosition",
       "comparison": "3",
       "value": "tempVars(\"botRolePosition\")",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "72",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "memberRoleList",
+      "comparison": "0",
+      "value": "tempVars(\"botRolePosition\")",
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "72",
+      "iffalseVal": "76",
       "name": "Check Variable"
     },
     {
@@ -228,7 +247,7 @@
       "role": "3",
       "varName2": "mutedRole",
       "iftrue": "2",
-      "iftrueVal": "67",
+      "iftrueVal": "71",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check If Member has Role"
@@ -259,7 +278,7 @@
       "name": "Send Message"
     },
     {
-      "call": "48",
+      "call": "52",
       "name": "Jump to Action"
     },
     {
@@ -284,7 +303,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "61",
+      "iffalseVal": "65",
       "name": "Check Variable"
     },
     {
@@ -295,7 +314,7 @@
       "iftrue": "3",
       "iftrueVal": "1",
       "iffalse": "2",
-      "iffalseVal": "74",
+      "iffalseVal": "78",
       "name": "Check Variable"
     },
     {
@@ -306,7 +325,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "74",
+      "iffalseVal": "78",
       "name": "Check Variable"
     },
     {
@@ -316,7 +335,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "69",
+      "iffalseVal": "73",
       "name": "Check Variable Type"
     },
     {
@@ -333,6 +352,14 @@
       "info": "7",
       "storage": "1",
       "varName2": "memberHighestRole",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "0",
+      "varName": "member",
+      "info": "17",
+      "storage": "1",
+      "varName2": "memberRoleList",
       "name": "Store Member Info"
     },
     {
@@ -367,7 +394,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "72",
+      "iffalseVal": "76",
       "name": "Check Variable"
     },
     {
@@ -375,10 +402,21 @@
       "varName": "memberRolePosition",
       "comparison": "3",
       "value": "tempVars(\"botRolePosition\")",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "72",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "memberRoleList",
+      "comparison": "0",
+      "value": "tempVars(\"botRolePosition\")",
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "72",
+      "iffalseVal": "76",
       "name": "Check Variable"
     },
     {
@@ -387,7 +425,7 @@
       "role": "3",
       "varName2": "mutedRole",
       "iftrue": "2",
-      "iftrueVal": "67",
+      "iftrueVal": "71",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check If Member has Role"
@@ -452,7 +490,7 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "2",
-      "iffalseVal": "61",
+      "iffalseVal": "65",
       "name": "Check Variable"
     },
     {
