@@ -163,7 +163,7 @@
     },
     {
       "storage": "1",
-      "varName": "memberRolePosition",
+      "varName": "memberRoleList",
       "comparison": "0",
       "value": "tempVars(\"botRolePosition\")",
       "iftrue": "0",
