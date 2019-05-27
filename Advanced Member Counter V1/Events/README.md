@@ -1,0 +1,1 @@
+You're only required to use the things inside the folders. If want to have it update every 5 minutes, and not have many events, you could use the one included in the Every 5 Minutes folder. If you want it to update every server update, then go to the folder in Every Server Update.
