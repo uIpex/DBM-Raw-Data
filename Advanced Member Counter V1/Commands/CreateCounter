@@ -109,7 +109,7 @@
       "varName": "vc3",
       "channelType": "1",
       "toChange": "0",
-      "newState": "Channel Count: ${tempVars(\"channelAmount\")}",
+      "newState": "Channel Count: ${msg.guild.channels.array().length}",
       "name": "Edit Channel"
     },
     {
