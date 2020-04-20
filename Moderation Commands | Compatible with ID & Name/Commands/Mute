@@ -179,7 +179,7 @@
     {
       "member": "2",
       "varName": "member",
-      "info": "17",
+      "info": "13",
       "storage": "1",
       "varName2": "memberRoleList",
       "name": "Store Member Info"
@@ -255,7 +255,7 @@
     {
       "member": "2",
       "varName": "member",
-      "info": "22",
+      "info": "18",
       "storage": "1",
       "varName2": "memberTag",
       "name": "Store Member Info"
@@ -357,7 +357,7 @@
     {
       "member": "0",
       "varName": "member",
-      "info": "17",
+      "info": "13",
       "storage": "1",
       "varName2": "memberRoleList",
       "name": "Store Member Info"
@@ -433,7 +433,7 @@
     {
       "member": "0",
       "varName": "",
-      "info": "22",
+      "info": "18",
       "storage": "1",
       "varName2": "memberTag",
       "name": "Store Member Info"
